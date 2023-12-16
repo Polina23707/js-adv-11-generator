@@ -11,10 +11,9 @@ export class Team {
     // это генератор
     // и здесь есть доступ к this
     // остаётся лишь правильно написать yield
-    yield this[0];
-    yield this[1];
-    yield this[2];
-    return this[3];
+    for (let i = 0; i < this.length; i++) {
+      yield this[i];
+    }
   }
 }
 
